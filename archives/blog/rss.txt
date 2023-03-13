@@ -1,0 +1,5 @@
+# I made an RSS Feed!
+
+This blog now has an RSS Feed! You can subscribe it by adding this link (http://feeds.feedburner.com/fgclueBlog) to your RSS Reader!
+
+Also thanks to FeedBurner for making it possible to me to have an RSS Feed!

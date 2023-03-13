@@ -1,0 +1,89 @@
+# How to make a basic Hello, World! Program in C++
+
+C++ is a very good programming language, it is a superset of C.
+
+So first you’re going to include iostream.
+
+`#include <iostream>`
+
+Now use int main() to say that that is what is going to happen in the start
+
+`int main()
+
+{
+
+      // Your code should be here
+
+}`
+
+Then use Standard Caracther Input (std::cout) to say Hello, World!
+
+`int main()
+
+{
+
+     std::cout << "Hello, World!";
+
+}`
+
+Now lets use return to return the output
+
+`int main()
+
+{
+
+     std::cout << "Hello, World!";
+
+int main()
+
+{
+
+     std::cout << "Hello, World!";
+
+}
+
+int main()
+
+{
+
+     std::cout << "Hello, World!";
+
+     return 0;
+
+}`
+
+# Making it fancy
+
+Now we are going to import unistd.h so we can use sleep()
+
+#include <unistd.h>
+
+Now we are going to put sleep(time) in the middle of std::cout and return 0;
+
+int main()
+
+{
+
+     std::cout << "Hello, World!";
+
+     sleep(20)
+
+     return 0;
+
+}
+
+Now lets compile it using g++.
+
+First, open a terminal and run g++ code.cpp
+
+`> g++ code.cpp`
+
+Now you will get a file called a.exe (if your on windows), now run that file
+
+`> .\a.exe`
+
+Output:
+
+`Hello, World!`
+
+And even if you don’t run that file from the terminal, it will still make a window.

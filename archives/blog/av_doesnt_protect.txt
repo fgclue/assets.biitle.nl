@@ -1,0 +1,29 @@
+# Anti-Viruses don't really "protect" you.
+
+Anti-Viruses commonly advertise as "making" you "safe" from malware, malicious websites, etc.
+
+Example:
+<image-1.png>(Example of Anti-Virus saying it makes you safe
+(https://www.avast.com/index#pc
+)
+The thing, Anti-Viruses don't do it really good, keeping samples in a database which would have to be updated a lot (as new viruses are made). And that's why now Anti-Viruses check the executable, but they still aren't that good, there will never be the perfect Anti-Virus.
+
+Most Anti-Viruses now have more features (e.g. Firewall, File Destroyer, etc.).
+
+# How to actually keep yourself safe
+
+First you need to think before executing something, if you just execute anything (by that I mean anything), you probally have a virus. If you wanna check if you have a virus on Windows, I would recommend using Sysinternals by Microsoft. You can download it at sysinternals.com. You should get Process Explorer and Autoruns.
+
+# Checking apps that run on startup with Autoruns
+
+First you should check for malicious applications, if you find one, search the executable name on google.
+
+Example:
+<image-2>(Example of a possibly malicious application)
+
+# Checking currently running processes with Process Explorer
+
+With Process Explorer, you can check for malicious processes that are in memory. If you find anything malicious, search the name on google.
+
+Example:
+<image-3>(Example of a Malicious Process In Memory)
