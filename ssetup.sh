@@ -1,4 +1,4 @@
-echo "i3pdv Setup"
+echo "REDACTED Setup"
 echo "Installing Xorg, xterm, xinit and lightdm"
 sudo dnf install Xorg xterm xinit lightdm
 echo "Installing XFCE4"
