@@ -1,7 +1,8 @@
-echo "[REDACTED] Setup"
+echo "i3pdv Setup"
+echo "Installing Xorg, xterm, xinit and lightdm"
+sudo dnf install Xorg xterm xinit lightdm
 echo "Installing XFCE4"
-sudo dnf install @xfce-desktop-enviroment
-echo "XFCE has been installed. Make sure to modify your system to boot XFCE on start up via the system settings. To start XFCE run startxfce4."
+sudo dnf install xfce-desktop
 echo "Adding flatpak & flathub repositories"
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 echo "Installing GNOME Software"
