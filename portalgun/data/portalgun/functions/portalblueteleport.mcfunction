@@ -1,0 +1,1 @@
+execute at @e[tag=portalred] positioned ^ ^ ^1 run tp @s ~ ~ ~
