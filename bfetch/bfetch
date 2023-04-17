@@ -1,0 +1,88 @@
+c4="\033[34m" # ASCII art color
+c3="\033[97m" # White
+
+
+if [ -f /etc/os-release ]; then
+    . /etc/os-release
+    osver="$NAME $VERSION"
+fi
+
+# Icons
+#
+
+ifedora=""
+iarch=""
+idebian=""
+iubuntu=""
+iredhat="󱄛"
+iopensuse=""
+ialmalinux=""
+ialpine=""
+iapple=""
+icentos=""
+ideepin=""
+idevuan=""
+ielementary=""
+iendeavour=""
+ifreebsd=""
+igentoo=""
+iguix=""
+ikali=""
+imint=""
+imageia=""
+imandriva=""
+imanjaro=""
+inixos=""
+iopenbsd=""
+iparrot=""
+ipopos=""
+iraspi=""
+irocky=""
+islackware=""
+isolus=""
+ivoid=""
+izorin=""
+
+kver=$(uname -r)
+
+# set this to your distro
+osfont="${ifedora}"
+
+
+
+
+
+# ASCII ART
+# CHANGE THIS TO YOUR DISTRO's pfetch ASCII ART
+
+fedora1="${c4}       ,'''''.   "
+fedora2="${c4}       |   ,.  | "
+fedora3="${c4}       |  |  '_' "
+fedora4="${c4}  ,....|  |..    "
+fedora5="${c4}.'  ,_;|   ..'   "
+fedora6="${c4}|  |   |  |      "
+fedora7="${c4}|  ',_,'  |      "
+fedora8="${c4} '.     ,'       "
+fedora9="${c4}   '''''         "
+
+
+uptime=$(uptime -p | cut -d " " -f2-)
+
+
+mem_info=$(free -m | grep Mem)
+
+total_mem=$(echo $mem_info | awk '{print $2}')
+used_mem=$(echo $mem_info | awk '{print $3}')
+
+# INFO
+
+echo -e "${fedora1}${c3}"
+echo -e "${fedora2}${c3} $USER@$HOSTNAME"
+echo -e "${fedora3}${c3} ${osfont} os ${osver}"
+echo -e "${fedora4}${c3}  kernel ${kver}"
+echo -e "${fedora5}${c3}  uptime ${uptime}"
+echo -e "${fedora6}${c3} 󰍛 memory ${used_mem}M/${total_mem}M"
+echo -e "${fedora7}${c3}"
+echo -e "${fedora8}${c3}"
+echo -e "${fedora9}${c3}"
+
